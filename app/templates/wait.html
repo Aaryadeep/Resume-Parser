@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Please Wait</title>
+    <script>
+        function navigate() {
+            window.location.href = 'results'; // Redirects user to the /map route when 'create_map' is finished
+        }
+        fetch('process').then(navigate); // Performing 'create_map' and then calls navigate() function, declared above
+    </script>
+    <style>
+        body {
+            display: flex;
+            font: 20px Arial, sans-serif;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f1f1f1;
+            margin: 0 auto;
+        }
+        
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            color: #444;
+        }
+        
+        p {
+            text-align: center;
+            margin: 0 auto;
+            font-size: 16px;
+            color: #888;
+        }
+        
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Please Wait</h1>
+    <p>Your file is being processed.</p>
+    <img src="https://media.giphy.com/media/srqUU2rmrDxr74GulN/giphy.gif" alt="Dog chasing cat animation">
+</body>
+
+</html>

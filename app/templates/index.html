@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #F5F5F5;
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-top: 50px;
+            color: #333;
+        }
+        
+        form {
+            width: 60%;
+            margin: 0 auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+        
+        input[type="file"] {
+            background-color: #FFFFFF;
+            border: 2px solid #CCC;
+            font-size: 20px;
+            padding: 12px 20px;
+            margin-bottom: 20px;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #FFFFFF;
+            font-size: 20px;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #3E8E41;
+        }
+        /* Add styles for the "Made with ❤️ by" text */
+        
+        .made-with {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.7);
+            box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .made-with a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .copyright {
+            font-size: 14px;
+            color: #333;
+            margin-top: 5px;
+        }
+        
+        .made-with a:hover {
+            color: #4CAF50;
+        }
+    </style>
+    <title>Upload File</title>
+</head>
+
+<body>
+    <h1>Upload File</h1>
+    <form action="{{url_for('upload')}}" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+    <div class="made-with"><b>Made with <span style="color: red">&#9829;</span> by <a href="https://www.linkedin.com/in/pranavaggarwal">Pranav Aggarwal</b></a>
+        <div class="copyright">Copyright ©2022</div>
+    </div>
+</body>
+
+</html>
