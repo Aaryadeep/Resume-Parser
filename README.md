@@ -14,5 +14,3 @@ This is a Python library that utilizes natural language processing and string op
 
 To install this library, run the following command:
 ```pip install -r requirements.txt```
-
-Here is the linkedin post along with sample: https://www.linkedin.com/posts/pranav00aggarwal_resumeparser-nlp-machinelearning-activity-7019349899045449728-hnI_?utm_source=share&utm_medium=member_desktop
