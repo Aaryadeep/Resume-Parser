@@ -15,7 +15,7 @@ from datetime import *
 from datetime import datetime
 import time
 
-df=pd.read_csv("/Users/pranavaggarwal/Documents/Personal Website/app/data.csv")
+df=pd.read_csv("/Users/aaryadeep/Documents/PersonalWebsite/app/data.csv")
 
 headings=["about","about me","education","experience","projects","volunteer","skills","Education","EDUCATION","Experience","EXPERIENCE"]
 skills=df["skills"].tolist()
