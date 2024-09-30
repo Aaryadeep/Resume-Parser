@@ -5,7 +5,7 @@ import pyresume
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
-app.config['UPLOAD_FOLDER'] = '/Users/pranavaggarwal/Documents/upload'
+app.config['UPLOAD_FOLDER'] = '/Users/aaryadeep/Documents/upload'
 results = None
 address=""
 
@@ -20,7 +20,7 @@ def process_file_background():
     global address
     resume,time=pyresume.master(pyresume.extract_text(address,pyresume.determine_file_type(address)))
     html= pyresume.generate_html(resume,time)
-    with open("/Users/pranavaggarwal/Documents/Personal Website/app/templates/results.html", "w") as f:
+    with open("/Users/aaryadeep/Documents/Personal Website/app/templates/results.html", "w") as f:
         f.write(html)
     resume.clear()
     results = get_results()
